@@ -1,2 +1,2 @@
-# jarodnajera.github.io
-Personal Website
+# Jarod Orange
+Welcome to my personal website!
