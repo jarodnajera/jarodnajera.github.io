@@ -1,0 +1,122 @@
+  #loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #canvas {
+    position: relative;
+    margin-right: 100px;
+  }
+  
+  #main-rind {
+    position: absolute;
+    width: 275px;
+    height: 300px;
+    background: orange;
+    border-radius: 50%;
+    transform: rotate(20deg);
+  }
+  
+  #outer-slice {
+    position: absolute;
+    background: #fff7cc;
+    width: 215px;
+    height: 285px;
+    border-radius: 50%;
+    transform: rotate(20deg);
+    margin-left: 3px;
+  }
+  
+  #inner-slice {
+    position: absolute;
+    background: linear-gradient(#ffc300, #ffe400);
+    width: 200px;
+    height: 270px;
+    border-radius: 50%;
+    transform: rotate(20deg);
+    margin-top: 9px;
+    margin-left: 5px;
+  }
+  
+  #stem {
+    position: absolute;
+    background: #fff7cc;
+    width: 15px;
+    height: 18px;
+    border-radius: 50%;
+    margin-top: 125px;
+    margin-left: 85px;
+  }
+  
+  #stem-line-1 {
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-bottom: 155px solid #fff7cc;
+    margin-top: 125px;
+    margin-left: 90px;
+  }
+  
+  #stem-line-2 {
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-bottom: 135px solid #fff7cc;
+    margin-top: 15px;
+    margin-left: 90px;
+    transform: rotate(180deg);
+  }
+  
+  #stem-line-3 {
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-bottom: 130px solid #fff7cc;
+    margin-top: 100px;
+    margin-left: 140px;
+    transform: rotate(-60deg);
+  }
+  
+  
+  #stem-line-4 {
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-bottom: 145px solid #fff7cc;
+    margin-top: 35px;
+    margin-left: 140px;
+    transform: rotate(-120deg);
+  }
+  
+  #stem-line-5 {
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-bottom: 110px solid #fff7cc;
+    margin-top: 65px;
+    margin-left: 62px;
+    transform: rotate(-240deg);
+  }
+  
+  #stem-line-6 {
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-bottom: 130px solid #fff7cc;
+    margin-top: 90px;
+    margin-left: 55px;
+    transform: rotate(-300deg);
+  }  

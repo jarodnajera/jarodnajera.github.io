@@ -1,0 +1,141 @@
+body {
+    background-color: rgb(252, 244, 230);
+}
+
+.navbar {
+    background-color: rgb(251, 200, 107);
+}
+
+.nav-item {
+    margin-left: 15px;
+    margin-right: 25px;
+}
+
+.nav-link {
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+}
+
+.nav-link:hover {
+    color: black;
+}
+
+#loader {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#loading-canvas {
+    position: relative;
+}
+
+.drop {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-color: orange;
+    border-radius: 0 50% 50% 50%;
+    border: 3px solid orange;
+    transform: rotate(45deg);
+}
+
+.d-one {
+    animation: drip 1s;
+    animation-iteration-count: infinite;
+    top: 40%;
+    left: 65%;
+}
+
+.d-two {
+    animation: drip 2s;
+    animation-iteration-count: infinite;
+    top: 45%;
+    left: 30%;
+}
+
+.d-three {
+    animation: drip 2.5s;
+    animation-iteration-count: infinite;
+    top: 40%;
+    left: 55%;
+}
+
+@keyframes drip {
+    100% {transform: rotate(45deg) translateY(120px) translateX(120px); opacity: 0;}
+}
+
+#loading {
+    margin-top: 100px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2.5rem;
+}
+
+.clear {
+    display: none;
+}
+
+#tree-canvas {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+}
+
+.orange {
+    background: orange;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.orange:hover {
+    cursor: pointer;
+    animation: orange-shake 2s;
+}
+
+@keyframes orange-shake {
+    10% { transform: translateX(3px); }
+    20% { transform: translateX(-3px); }
+    30% { transform: translateX(3px); }
+    40% { transform: translateX(-3px); }
+    50% { transform: translateX(3px); }
+    60% { transform: translateX(-3px); }
+    70% { transform: translateX(3px); }
+    80% { transform: translateX(-3px); }
+    90% { transform: translateX(3px); }
+    100% { transform: translateX(0); }
+}
+
+.o-one {
+    position: absolute;
+    top: 42%;
+    left: 53%;
+}
+
+.o-two {
+    position: absolute;
+    top: 45%;
+    left: 41%;
+}
+
+.o-three {
+    position: absolute;
+    top: 20%;
+}
+
+#tree-svg:active {
+    animation: tree-shake 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes tree-shake {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(1deg); }
+    20% { transform: rotate(-1deg); }
+    30% { transform: rotate(1deg); }
+    40% { transform: rotate(-1deg); }
+    50% { transform: rotate(1deg); }
+}
