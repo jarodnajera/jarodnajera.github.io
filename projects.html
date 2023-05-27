@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Jarod Orange</title>
+        <link rel="icon" href="./imgs/orange_loader.svg">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+            rel="stylesheet" 
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+            crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link href="./src/index.css" rel="stylesheet">
+        <link href="./src/projects.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar sticky-top navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">Jarod Orange</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Resume</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main id="projects">
+            <h1 id="projects-title">Projects</h1>
+            <div id="projects-container">
+                <div class="accordion" id="accordionProjects">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Pocket Botanist
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                        <div class="accordion-body">
+                          <div class="project-container">
+                            <div class="tools-git">
+                                <div class="tools">Javascript, React Native, Express.js</div>
+                                <a href="https://github.com/jarodnajera/Pocket_Botanist_Final"><img src="./imgs/github-mark.svg" height="25"></a>
+                            </div>
+                            <br>
+                            <div class="project-description">
+                                <p>Made for BioHack 2023</p>
+                                <p>
+                                    Mobile application that takes pictures of plants and sends them to the <a href="https://web.plant.id/plant-identification-api/">Plant.id API</a> for identification. It will tell you the plant's
+                                    name with a picture of it, and if it's edible or not. If you have a sick house plant, you can diagnose plant illnesses with it as well.
+                                </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Chopped
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                        <div class="accordion-body">
+                            <div class="project-container">
+                                <div class="tools-git">
+                                    <div class="tools">Javascript, Vue.js, Express.js</div>
+                                    <a href="https://github.com/jarodnajera/Chopped"><img src="./imgs/github-mark.svg" height="25"></a>
+                                </div>
+                                <br>
+                                <div class="project-description">
+                                    <p>Made for CS 180</p>
+                                    <p>
+                                        Web application for looking up easy to make recipes. Allows users to sign up and add recipes of their own. 
+                                        Users are also able to rate recipes.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Chef Norm
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                        <div class="accordion-body">
+                            <div class="project-container">
+                                <div class="tools-git">
+                                    <div class="tools">Python, Discord.py, Selenium</div>
+                                </div>
+                                <br>
+                                <div class="project-description">
+                                    <p>Made for UCR Housing</p>
+                                    <p>
+                                        Discord bot used by all communities within UCR Housing that allows students to check the menu 
+                                        for the day for the residential dining halls at UCR.
+                                    </p>
+                                    <p>
+                                        (Currently not on GitHub)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            PokeID
+                          </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
+                          <div class="accordion-body">
+                            <div class="project-container">
+                                <div class="tools-git">
+                                    <div class="tools">Python, Discord.py</div>
+                                    <a href="https://github.com/jarodnajera/Poke_ID"><img src="./imgs/github-mark.svg" height="25"></a>
+                                </div>
+                                <br>
+                                <div class="project-description">
+                                    <p>Made for UCR Housing</p>
+                                    <p>
+                                        Discord bot used by Lothian Residence Hall that allows users to "catch" Pokemon by pining 
+                                        the bot and naming the picture of the Pokemon sent to them
+                                    </p>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+            </div>
+        </main>
+
+        <footer>
+            <div>Jarod Najera 2023</div>
+        </footer>
+        
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" 
+            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" 
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" 
+            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" 
+            crossorigin="anonymous"></script>
+    </body>
+</html>

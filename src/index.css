@@ -1,9 +1,16 @@
-body {
-    font-family: 'Press Start 2P', cursive;
-    background-color: rgb(252, 244, 230);
+html, body {
+    height: 100%;  
 }
 
-.navbar {
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #DFFEFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav {
     background-color: rgb(251, 200, 107);
 }
 
@@ -12,8 +19,21 @@ body {
     margin-right: 25px;
 }
 
+.navbar-brand {
+    color: white;
+}
+
+.navbar-brand:hover {
+    color: black;
+}
+
+
 .nav-link {
     color: white;
+}
+
+.nav-link.active {
+    color: black;
 }
 
 .nav-link:hover {
@@ -41,14 +61,14 @@ body {
     animation: drip 1s;
     animation-iteration-count: infinite;
     top: 40%;
-    left: 65%;
+    left: 43%;
 }
 
 .d-two {
     animation: drip 2s;
     animation-iteration-count: infinite;
     top: 45%;
-    left: 30%;
+    left: 50%;
 }
 
 .d-three {
@@ -72,39 +92,70 @@ body {
     display: none;
 }
 
-#tree-canvas {
+#main-container {
     display: flex;
-    justify-content: center;
+    border: 4px solid white;
+    flex-direction: column;
+    border-radius: 1.5rem;
+    margin: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+#welcome {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 35px;
+    font-size: 2em;
 }
 
-#outer-orange-box {
-    width: 280px;
-    height: 250px;
-    position: fixed;
-}
-
-#orange-box {
+#sun-container {
+    position: relative;
+    overflow: hidden;
     width: 100%;
-    height: 100%;
+    height: 170px;
+}
+
+#sun {
+    position: absolute;
+    right: 0px;
+    top: -130px;
+    right: -130px;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+#game-container {
+    position: relative;
+}
+
+
+#grass {
+    background-color: #00A651;
+    height: 40px;
+    width: 100%;
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+
+#tree-container {
     position: relative;
 }
 
 .orange {
-    position: absolute;
-    background: orange;
-    width: 40px;
-    height: 40px;
+    background-color: orange;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
+    position: absolute;
 }
 
 .orange:hover {
     cursor: pointer;
-    animation: orange-shake 2s;
+    animation: orangeshake 1s;
 }
 
-@keyframes orange-shake {
+@keyframes orangeshake {
     10% { transform: translateX(3px); }
     20% { transform: translateX(-3px); }
     30% { transform: translateX(3px); }
@@ -115,21 +166,34 @@ body {
     80% { transform: translateX(-3px); }
     90% { transform: translateX(3px); }
     100% { transform: translateX(0); }
+    
 }
 
-.o-one {
-    top: 25px;
-    left: 60px;
+.o-1 {
+    top: 90px;
+    left: 170px
+
 }
 
-.o-two {
-    top: 160px;
-    left: 10px;
+.o-2 {
+    top: 250px;
+    left: 100px
+
 }
 
-.o-three {
-    top: 125px;
-    left: 215px;
+.o-3 {
+    top: 210px;
+    left: 300px
+
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
 }
 
 #tree-svg:active {
@@ -146,8 +210,19 @@ body {
     50% { transform: rotate(1deg); }
 }
 
-#welcome {
-    text-align: center;
-    margin-top: 35px;
-    font-size: 1.5em;
+#game-canvas-container {
+    border: 2px solid black;
+    width: 100%;
+    height: 300px;
+    bottom: 30px;
+    position: absolute;
+}
+
+
+footer {
+    background-color: rgb(251, 200, 107);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

@@ -1,0 +1,29 @@
+body {
+    background-color: #fff9ef;
+}
+
+#about-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+img {
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+#about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#bio {
+    width: 50%;
+}
+
+a {
+    text-decoration: none;
+}
