@@ -43,7 +43,7 @@ a {
 }
 
 /* Mobile */
-@media (min-width:480px) {
+@media (max-width: 600px) {
     #projects-title {
         text-align: center;
         margin-top: 15px;
