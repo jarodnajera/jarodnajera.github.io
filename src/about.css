@@ -27,3 +27,17 @@ body {
 a {
     text-decoration: none;
 }
+
+/* Mobile */
+@media (min-width:480px) {
+    #about-title {
+        margin-top: 15px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #bio {
+        width: 80%;
+        font-size: .7em;
+    }
+}

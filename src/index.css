@@ -40,6 +40,15 @@ nav {
     color: black;
 }
 
+.navbar-toggler {
+    border: 1px solid white;
+    border-radius: .3em;
+}
+
+#hamburger {
+    height: 1em;
+}
+
 #loader {
     display: flex;
     justify-content: center;
@@ -47,6 +56,10 @@ nav {
     align-items: center;
     width: 100%;
     height: 100%;
+}
+
+#loader-svg {
+    height: 400px;
 }
 
 .drop {
@@ -119,6 +132,7 @@ nav {
 
 #sun {
     position: absolute;
+    height: 300px;
     right: 0px;
     top: -130px;
     right: -130px;
@@ -244,4 +258,56 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 30px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    #loader-svg {
+        height: 40vh;
+    }
+
+    .drop {
+        width: 3vh;
+        height: 3vh;
+    }
+
+    #loading {
+        font-size: 5vh;
+        margin-bottom: 15px;
+    }
+
+    #tree-svg {
+        height: 35vh;
+    }
+
+    #sun {
+        height: 40vh;
+        right: 0px;
+        top: -16vh;
+        right: -19vh;
+    }
+
+    #grass {
+        height: 9vh;
+    }
+
+    .orange {
+        width: 3vh;
+        height: 3vh;
+    }
+
+    .o-1 {
+        top: 6vh;
+        left: 11vh;
+    }
+    
+    .o-2 {
+        top: 17vh;
+        left: 9vh;
+    }
+    
+    .o-3 {
+        top: 15vh;
+        left: 20vh;
+    }
 }

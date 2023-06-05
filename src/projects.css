@@ -41,3 +41,25 @@ body {
 a {
     text-decoration: none;
 }
+
+/* Mobile */
+@media (min-width:480px) {
+    #projects-title {
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    #projects-container {
+        width: 85%;
+        margin-bottom: 15px;
+    }
+
+    .tools {
+        font-size: .5em;
+    }
+
+    .project-description {
+        font-size: .7em;
+    }
+}
