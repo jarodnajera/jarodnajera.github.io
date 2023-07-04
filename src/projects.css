@@ -42,6 +42,30 @@ a {
     text-decoration: none;
 }
 
+.gallery-title {
+    text-align: center;
+    text-decoration: underline;
+    padding: 10px 0px;
+}
+
+.carousel-control-prev {
+    background-color: black;
+    margin: auto;
+    height: 50px;
+    border-radius: 25%;
+}
+
+.carousel-control-next {
+    background-color: black;
+    margin: auto;
+    height: 50px;
+    border-radius: 25%;
+}
+
+img {
+    margin: auto;
+}
+
 /* Mobile */
 @media (max-width: 600px) {
     #projects-title {
